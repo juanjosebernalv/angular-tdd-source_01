@@ -1,0 +1,14 @@
+<h1>Sign Up</h1>
+<label for="username">Username</label>
+<input id="username" placeholder="Username" (input)="onChangeUsername($event)"/>
+
+<label for="email">Email</label>
+<input id="email" placeholder="Email" (input)="onChangeEmail($event)"/>
+
+<label for="password">Password</label>
+<input type="password" id="password" placeholder="Password" (input)="onChangePassword($event)"/>
+
+<label for="passwordRepeat">Password Repeat</label>
+<input type="password" id="passwordRepeat" placeholder="Password Repeat"  (input)="onChangePasswordRepeat($event)"/>
+
+<button [disabled]="isDisabled()" (click)="onClickSignUp()">Sign Up</button>
